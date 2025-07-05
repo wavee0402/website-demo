@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>X-MET8000: Precious metals 
+testing on the move</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background: #d9ddff;
+      color: #000000;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 30px 20px;
+    }
+
+    h2 {
+      color: #1a237e;
+      margin-bottom: 10px;
+      font-size: 1.8rem;
+    }
+
+    p, li {
+      margin-bottom: 10px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 12px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f0f0f0;
+    }
+
+    .highlight {
+      background-color: #e3f2fd;
+    }
+
+    /* Slider */
+   .slider {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  margin: 40px auto;
+  overflow: hidden;
+  border-radius: 10px;
+  height: 400px; /* ✅ Fixed height */
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  height: 100%; /* match slider height */
+}
+
+.slides img {
+  width: 100%;
+  height: 100%; /* ✅ Fixed height */
+  object-fit: cover; /* ✅ Ensures image fills space without distortion */
+  flex-shrink: 0;
+}
+
+
+    .nav-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(0,0,0,0.5);
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      z-index: 10;
+    }
+
+    .prev {
+      left: 10px;
+    }
+
+    .next {
+      right: 10px;
+    }
+
+   /* Container allows horizontal scroll on small screens */
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+}
+
+/* Base table styles */
+.responsive-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.responsive-table th,
+.responsive-table td {
+  padding: 12px 16px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+.responsive-table .highlight {
+  background-color: #f9f9f9;
+}
+
+/* Mobile stacked layout */
+@media (max-width: 600px) {
+  .responsive-table thead {
+    display: none;
+  }
+
+  .responsive-table,
+  .responsive-table tbody,
+  .responsive-table tr,
+  .responsive-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .responsive-table tr {
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #eee;
+  }
+
+  .responsive-table td {
+    text-align: right;
+    padding-left: 50%;
+    position: relative;
+  }
+
+  .responsive-table td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 16px;
+    top: 12px;
+    font-weight: bold;
+    text-align: left;
+  }
+}
+  </style>
+   <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Rubik:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+ 
+<header id="mainHeader">
+  <div class="logo">
+    <a href="index.html">
+      <img src="img/logo.png" alt="Logo" style="height: 70px;">
+    </a>
+  </div>
+</header>
+
+<br>
+<br>
+<br>
+<br>
+
+ 
+
+  <div class="container">
+    <!-- Image Slider -->
+    <section>
+     <h1>X-MET8000: Precious metals 
+testing on the move</h1>
+    <p>Compact • Powerful • Precision Welding for Fine Jewelry
+
+      <div class="slider" id="slider">
+        <button class="nav-btn prev" onclick="prevSlide()">❮</button>
+        <div class="slides" id="slides">
+          <img src="img/2221.jpg" alt="Front View" />
+          <img src="img/2222.jpg" alt="In Action" />
+         
+        </div>
+        <button class="nav-btn next" onclick="nextSlide()">❯</button>
+      </div>
+    </section>
+
+    <!-- Product Overview -->
+    <section>
+      <h2>Product Overview</h2>
+      <p>The X-MET8000 is a handheld XRF analyzer that 
+delivers fast and accurate precious metals analysis.
+ The X-MET about the size and weight of an electric 
+drill; to use you simply point the analyzer at the 
+sample and press the trigger. This analyzer is perfect 
+if you need to travel to do your testing, or your items 
+are too large to fit into a benchtop instrument
+Compact yet powerful, this machine ensures stable performance, easy operation, and is ideal for both production and repair workshops seeking reliability and finesse.
+</p>
+    </section>
+
+    <!-- Key Features -->
+    <section>
+      <h2>Key Features</h2>
+      <ul>
+        <li>POINT AND SHOOT TECHNOLOGY-Place the analyzer on the sample, press the trigger 
+and the results appear on the easy to read screen 
+in seconds. The X-MET includes a large icon-driven 
+touchscreen that you can customize to display karat 
+value or full composition / thickness</li>
+        <li> ROBUST FOR EVERYDAY USE-
+ The X-MET is IP54 compliant (equivalent to NEMA 
+3), splash water and dust proof, and is safe to use 
+indoors and out. It has been tested to the MIL-STD
+810G military standard for robustness and you can 
+choose optional protective components, such as a 
+shield or Kapton window, to prevent damage when 
+testing small or sharp objects
+
+</li>
+        <li>FULLY PORTABLE-
+With a rechargeable battery that will last for up to 
+12 hours between charging, the X-MET is compact 
+and lightweight. It only weighs 1.5kg (including the 
+battery) and all accessories fit in the small and robust 
+transport case.</li>
+        <li>ADVANCED DATA MANAGEMENT- You can store up to 100,000 results on the instrument 
+itself, export reports on a USB memory stick, or 
+automatically store results securely in the Hitachi 
+High-Tech LiveData cloud. You can also print results 
+on labels, using a portable Bluetooth printer, to attach 
+to measured pieces to avoid mix-ups.
+
+
+
+</li>
+      </ul>
+    </section>
+
+    <!-- Applications -->
+    <section>
+      <h2>Applications</h2>
+      <ul>
+        <li>Precious Metal Coating Thickness</li>
+        <li>Multi-Layer Analysis</li>
+        <li>Authenticity & Purity Verification</li>
+        <li>Multi-Layer Analysis</li>
+        <li>Supplier Validation</li>
+      </ul>
+    </section>
+  </div>
+
+  <script>
+    const slides = document.getElementById("slides");
+    const totalSlides = slides.children.length;
+    let index = 0;
+
+    function updateSlider() {
+      slides.style.transform = `translateX(-${index * 100}%)`;
+    }
+
+    function nextSlide() {
+      index = (index + 1) % totalSlides;
+      updateSlider();
+    }
+
+    function prevSlide() {
+      index = (index - 1 + totalSlides) % totalSlides;
+      updateSlider();
+    }
+  </script>
+</body>
+</html>
